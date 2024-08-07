@@ -7,10 +7,12 @@ import java.util.List;
 public class Juego {
     private List<Carta> mazo;
     private List<List<Carta>> pilas;
+    private int movimientosEnTurno;
 
     public Juego() {
         mazo = new ArrayList<>();
         pilas = new ArrayList<>();
+        movimientosEnTurno = 0;
     }
 
     public void crearMazo() {
@@ -32,18 +34,17 @@ public class Juego {
     }
 
     public boolean moverCarta(Carta carta, int pilaOrigen, int pilaDestino) {
+        if (movimientosEnTurno >= 2) {
+            System.out.println("No puedes mover más de 2 cartas por turno.");
+            return false;
+        }
+
         List<Carta> origen = pilas.get(pilaOrigen);
         List<Carta> destino = pilas.get(pilaDestino);
 
-        if (origen.stream().count()>0)
-        {
-            origen.remove(carta);
+        if (origen.remove(carta)) {
             destino.add(carta);
-            return true;
-        }
-        else if (origen.stream().count() == 0)
-        {
-            destino.add(carta);
+            movimientosEnTurno++;
             return true;
         }
         return false;
@@ -51,6 +52,8 @@ public class Juego {
 
     public void aplicarReglas() {
         // Reglas del juego (por ejemplo, mover cartas solo a pilas de mayor valor)
+        // Reiniciar el contador de movimientos al comienzo de cada turno
+        movimientosEnTurno = 0;
     }
 
     public void mostrarEstado() {

@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4fce6554-e304-47fb-84f1-673a6f9387d4" name="Changes" comment="Modificaciones realizadas.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JuegoDeCartas/com/ejemplo/juegodecartas/Juego.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JuegoDeCartas/com/ejemplo/juegodecartas/Juego.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JuegoDeCartas/com/ejemplo/juegodecartas/JuegoConsola.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JuegoDeCartas/com/ejemplo/juegodecartas/JuegoConsola.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ejemplo/juegodecartas/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ejemplo/juegodecartas/Carta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ejemplo/juegodecartas/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ejemplo/juegodecartas/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ejemplo/juegodecartas/JuegoConsola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ejemplo/juegodecartas/JuegoConsola.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +102,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -117,29 +122,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ejemplo/juegodecartas/JuegoConsola.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ejemplo/juegodecartas/JuegoConsola.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ejemplo/juegodecartas/JuegoConsola.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/com/ejemplo/juegodecartas/Juego.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ejemplo/juegodecartas/Juego.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ejemplo/juegodecartas/Juego.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="6" />
+          <line>42</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

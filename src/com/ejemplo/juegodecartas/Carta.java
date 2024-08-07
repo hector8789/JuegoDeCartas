@@ -31,4 +31,3 @@ public class Carta {
         return valor + " de " + palos[palo - 1];
     }
 }
-
