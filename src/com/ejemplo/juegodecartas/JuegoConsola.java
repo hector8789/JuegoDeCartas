@@ -37,6 +37,11 @@ public class JuegoConsola {
             }
 
             System.out.println("Turno finalizado.");
+            for (int i = 0; i < 4; i++) {
+                System.out.println(juego.verificarEstadoJuego(juego.getPilas().get(i)));
+            }
         }
     }
 }
+
+

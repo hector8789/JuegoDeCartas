@@ -34,8 +34,8 @@ public class Juego {
     }
 
     public boolean moverCarta(Carta carta, int pilaOrigen, int pilaDestino) {
-        if (movimientosEnTurno >= 2) {
-            System.out.println("No puedes mover más de 2 cartas por turno.");
+        if (movimientosEnTurno >= 3) {
+            System.out.println("No puedes mover más de 3 cartas por turno.");
             return false;
         }
 
@@ -51,7 +51,6 @@ public class Juego {
     }
 
     public void aplicarReglas() {
-        // Reglas del juego (por ejemplo, mover cartas solo a pilas de mayor valor)
         // Reiniciar el contador de movimientos al comienzo de cada turno
         movimientosEnTurno = 0;
     }
@@ -61,4 +60,28 @@ public class Juego {
             System.out.println("Pila " + (i + 1) + ": " + pilas.get(i));
         }
     }
+
+    public int calcularPuntaje(List<Carta> pila) {
+        int puntaje = 0;
+        for (Carta carta : pila) {
+            puntaje += carta.getValor();
+        }
+        return puntaje;
+    }
+
+    public String verificarEstadoJuego(List<Carta> pila) {
+        int puntaje = calcularPuntaje(pila);
+        if (puntaje == 21) {
+            return "¡Felicidades! Has ganado con un puntaje de 21.";
+        } else if (puntaje > 21) {
+            return "Has perdido. Tu puntaje es " + puntaje + " y se pasó de 21.";
+        } else {
+            return "Tu puntaje actual es " + puntaje + ".";
+        }
+    }
+
+    public List<List<Carta>> getPilas() {
+        return pilas;
+    }
 }
+
